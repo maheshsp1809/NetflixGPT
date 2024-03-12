@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { TMDB_API_URL, TMDB_OPTIONS } from "../services/tmdb";
-import { setMovie } from '../stores/moviesSlice';
+import { setMovie } from "../stores/moviesSlice";
 
 /**
  * Custom hook to fetch movie data and update the Redux store.
@@ -38,15 +38,15 @@ const useMovie = (endpoint, movieState, genreId, originalLanguage) => {
 
       const response = await fetch(apiUrl, TMDB_OPTIONS);
       const result = await response.json();
-      dispatch(setMovie({ movieState, movieData: result }))
+      dispatch(setMovie({ movieState, movieData: result }));
     } catch (error) {
-      console.error('Error fetching movies:', error);
+      console.error("Error fetching movies:", error);
     }
-  }
+  };
 
   useEffect(() => {
-    fetchData()
-  }, [])
-}
+    fetchData();
+  }, []);
+};
 
 export default useMovie;

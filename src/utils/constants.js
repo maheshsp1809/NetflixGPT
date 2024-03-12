@@ -8,14 +8,13 @@ export const BACKDROP = `${BASE_URL}/blur.png`;
 export const AVATAR_RED = "avatar-red.jpeg";
 export const AVATAR_BLUE = "avatar-blue.jpeg";
 
-
 export const SCREENSHOT = {
-  "landing": `${BASE_URL}/screenshot/01-Landing.png`,
-  "signin": `${BASE_URL}/screenshot/02-Signin.png`,
-  "signup": `${BASE_URL}/screenshot/03-Signup.png`,
-  "browse": `${BASE_URL}/screenshot/04-Browse.png`,
-  "movieList": `${BASE_URL}/screenshot/05-Movie-List.png`,
-  "shimmer": `${BASE_URL}/screenshot/06-Shimmer-loading.png`,
-  "search": `${BASE_URL}/screenshot/07-Search.png`,
-  "watch": `${BASE_URL}/screenshot/08-Watch.png`,
-}
+  landing: `${BASE_URL}/screenshot/01-Landing.png`,
+  signin: `${BASE_URL}/screenshot/02-Signin.png`,
+  signup: `${BASE_URL}/screenshot/03-Signup.png`,
+  browse: `${BASE_URL}/screenshot/04-Browse.png`,
+  movieList: `${BASE_URL}/screenshot/05-Movie-List.png`,
+  shimmer: `${BASE_URL}/screenshot/06-Shimmer-loading.png`,
+  search: `${BASE_URL}/screenshot/07-Search.png`,
+  watch: `${BASE_URL}/screenshot/08-Watch.png`,
+};
