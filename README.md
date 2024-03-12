@@ -41,7 +41,7 @@ module.exports = {
 };
 ```
 
-- Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+- Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file or the css file present in root directory
 
 ```css
 @tailwind base;
