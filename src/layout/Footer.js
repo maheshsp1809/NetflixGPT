@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LOGO_RED } from "../utils/constants";
+import LOGO_RED from "../assets/ngpt-red-300x71-01.png";
 import { PAGE } from "../router/routes";
 
 const Footer = () => {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { PAGE } from "../router/routes";
-import { LOGO_RED } from "../utils/constants";
+import LOGO_RED from "../assets/ngpt-red-300x71-01.png";
 
 const DefaultNavbar = () => {
   return (
@@ -11,12 +11,15 @@ const DefaultNavbar = () => {
         </Link>
       </div>
       <div className="flex">
-        <Link to={PAGE.SIGNIN} className="bg-red-primary px-5 py-1 text-white rounded-sm">
+        <Link
+          to={PAGE.SIGNIN}
+          className="bg-red-primary px-5 py-1 text-white rounded-sm"
+        >
           Sign In
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default DefaultNavbar;

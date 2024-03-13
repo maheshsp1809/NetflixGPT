@@ -1,5 +1,12 @@
 import React from "react";
-import { SCREENSHOT } from "../utils/constants";
+import landing from "../assets/screenshot/01-Landing.png";
+import signin from "../assets/screenshot/02-Signin.png";
+import signup from "../assets/screenshot/03-Signup.png";
+import browse from "../assets/screenshot/04-Browse.png";
+import movieList from "../assets/screenshot/05-Movie-List.png";
+import shimmer from "../assets/screenshot/06-Shimmer-loading.png";
+import search from "../assets/screenshot/07-Search.png";
+import watch from "../assets/screenshot/08-Watch.png";
 
 const About = () => {
   return (
@@ -61,9 +68,9 @@ const About = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.landing} target="_blank" rel="noreferrer">
+          <a href={landing} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.landing}
+              src={landing}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Landing Page"
@@ -71,9 +78,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.signin} target="_blank" rel="noreferrer">
+          <a href={signin} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.signin}
+              src={signin}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Signin Page"
@@ -81,9 +88,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.signup} target="_blank" rel="noreferrer">
+          <a href={signup} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.signup}
+              src={signup}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Signup Page"
@@ -91,9 +98,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.browse} target="_blank" rel="noreferrer">
+          <a href={browse} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.browse}
+              src={browse}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Browse Page"
@@ -101,9 +108,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.movieList} target="_blank" rel="noreferrer">
+          <a href={movieList} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.movieList}
+              src={movieList}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Movie List Page"
@@ -111,9 +118,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.search} target="_blank" rel="noreferrer">
+          <a href={search} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.search}
+              src={search}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Search Page"
@@ -121,9 +128,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.shimmer} target="_blank" rel="noreferrer">
+          <a href={shimmer} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.shimmer}
+              src={shimmer}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Shimmer UI loading"
@@ -131,9 +138,9 @@ const About = () => {
           </a>
         </div>
         <div className="screen rounded overflow-hidden shadow-xl">
-          <a href={SCREENSHOT.watch} target="_blank" rel="noreferrer">
+          <a href={watch} target="_blank" rel="noreferrer">
             <img
-              src={SCREENSHOT.watch}
+              src={watch}
               className="w-full hover:scale-110"
               style={{ transition: "0.9s" }}
               alt="Watch Now Page"

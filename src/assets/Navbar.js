@@ -16,7 +16,7 @@ const Navbar = () => {
   const [navbarOpacity, setNavbarOpacity] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [profilePhoto, setProfilePhoto] = useState(null);
+  const [profilePhoto, setProfilePhoto] = useState(AVATAR_RED);
   const dropdownRef = useRef(null);
   const dispatch = useDispatch();
   const navigate = useNavigate();
