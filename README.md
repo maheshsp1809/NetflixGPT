@@ -78,7 +78,7 @@ npm start
 
 Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
 
-## Screen Shot
+<!-- ## Screen Shot
 
 - Landing Page
 
@@ -110,7 +110,7 @@ Live Demo : [Live Demo](https://okneeraj.github.io/netflix-gpt "Live Demo")
 
 - Watch Now Page
 
-  ![Watch Now Page](https://okneeraj.github.io/netflix-gpt/screenshot/08-Watch.png)
+  ![Watch Now Page](https://okneeraj.github.io/netflix-gpt/screenshot/08-Watch.png) -->
 
 # 💖 Support This Project
 
