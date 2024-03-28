@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constants";
-import AVATAR_RED from "../assets/avatar-green1.png";
+import AVATAR_RED from "../assets/default-red.png";
 import LOGO_RED from "../assets/ngpt-red-300x71-01.png";
 import BACKDROP from "../assets/blur.png";
 import { PAGE } from "../router/routes";
@@ -16,7 +16,7 @@ const Navbar = () => {
   const [navbarOpacity, setNavbarOpacity] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [profilePhoto, setProfilePhoto] = useState(null);
+  const [profilePhoto, setProfilePhoto] = useState(AVATAR_RED);
   const dropdownRef = useRef(null);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -137,52 +137,52 @@ const Navbar = () => {
               <SearchOutlinedIcon style={{ fontSize: "28px" }} />
               <span className="hidden lg:block">Search</span>
             </Link>
+
             <div className="profile-dropdown relative" ref={dropdownRef}>
-              <div
-                className="flex items-center gap-3 cursor-pointer"
-                onClick={handlerDropDown}
-              >
-                <div className="thumb aspect-square w-8 h-8 bg-gray-800">
-                  <img
-                    src={`${BASE_URL}/${profilePhoto}`}
-                    alt={user.displayName}
-                  />
-                </div>
-                <div className="text-sm hidden lg:block">
-                  {user.displayName}
-                </div>
-              </div>
-              {isOpen && (
-                <div className="bg-black/95 absolute z-50 right-0 top-10 min-w-[170px] pt-2 border border-gray-900 rounded-md">
-                  <a
-                    href="#!"
-                    className="flex items-center px-4 py-2 gap-3 text-xs text-slate-500 hover:text-white"
-                  >
-                    <div className="w-5 h-5 bg-cyan-500"></div>
-                    <div className="title">Mahesh</div>
-                  </a>
-                  <a
-                    href="#!"
-                    className="flex items-center px-4 py-2 gap-3 text-xs text-slate-500 hover:text-white"
-                  >
-                    <div className="w-5 h-5 bg-green-500"></div>
-                    <div className="title">Kids</div>
-                  </a>
-                  <Link
-                    to={PAGE.PROFILE}
-                    className="flex items-center px-4 py-2 gap-3 text-xs text-slate-500 hover:text-white"
-                  >
-                    <div className="w-5 h-5 bg-gray-700"></div>
-                    <div className="title">Manage Profile</div>
-                  </Link>
-                  <div className="px-2 gap-3 text-xs text-slate-300 flex justify-center items-center border-t border-gray-700 mt-4 hover:text-white">
-                    <button className="p-3" onClick={handleSignOut}>
-                      {" "}
-                      Sign Out
-                    </button>
+              <div className="h-10 w-10">
+                <div
+                  className="flex items-center gap-3 cursor-pointer"
+                  onClick={handlerDropDown}
+                >
+                  <div className="thumb aspect-square w-8 h-8 bg-gray-800">
+                    <img src={AVATAR_RED} alt="avatar" />
+                  </div>
+                  <div className="text-sm hidden lg:block">
+                    {user.displayName}
                   </div>
                 </div>
-              )}
+                {isOpen && (
+                  <div className="bg-black/95 absolute z-50 right-0 top-10 min-w-[170px] pt-2 border border-gray-900 rounded-md">
+                    <a
+                      href="#!"
+                      className="flex items-center px-4 py-2 gap-3 text-xs text-slate-500 hover:text-white"
+                    >
+                      <div className="w-5 h-5 bg-cyan-500"></div>
+                      <div className="title">Mahesh</div>
+                    </a>
+                    <a
+                      href="#!"
+                      className="flex items-center px-4 py-2 gap-3 text-xs text-slate-500 hover:text-white"
+                    >
+                      <div className="w-5 h-5 bg-green-500"></div>
+                      <div className="title">Kids</div>
+                    </a>
+                    <Link
+                      to={PAGE.PROFILE}
+                      className="flex items-center px-4 py-2 gap-3 text-xs text-slate-500 hover:text-white"
+                    >
+                      <div className="w-5 h-5 bg-gray-700"></div>
+                      <div className="title">Manage Profile</div>
+                    </Link>
+                    <div className="px-2 gap-3 text-xs text-slate-300 flex justify-center items-center border-t border-gray-700 mt-4 hover:text-white">
+                      <button className="p-3" onClick={handleSignOut}>
+                        {" "}
+                        Sign Out
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
